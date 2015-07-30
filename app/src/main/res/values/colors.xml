@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="accent">#607D8B</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="main_white">#f0ffff</color>
+    <color name="deep_red">#b22922</color>
+    <color name="pink_500">#e91e63</color>|
+    <color name="gray">#888888</color>
+    <color name="light_gray">#eeeeee</color>
+    <color name="common_gray">#777777</color>
+    <color name="common_blue">#29A6E9</color>
+
+    <color name="call_record_tab_bg">#282828</color>
+    <color name="call_record_tab_bg_on">#1d1d1d</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="background">#F9F9F9</color>
+    <color name="background_selected">#E8E8E8</color>
+    <color name="transparent_half">#e0000000</color>
+
+    <color name="list_divider_top">#E2E2E2</color>
+    <color name="list_divider_bottom">#FFFFFF</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>

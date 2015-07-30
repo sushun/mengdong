@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.md.trainclient" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".common.ClientApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LogInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.coursecenter.CourseCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.QuestionBankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExaminationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExaminationGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.coursecenter.CourseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".qrCode.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExaminationRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LearningRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeacherAppraisalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.SequencePracticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.ChapterPracticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.PracticeStatisticsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.RandomPracticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.QuestionTrainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.QuestionCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.QuestionWrongActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.questionbank.SimulateExaminationActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

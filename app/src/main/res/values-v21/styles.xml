@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonCommon">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_margin">15dp</item>
+    </style>
+</resources>
