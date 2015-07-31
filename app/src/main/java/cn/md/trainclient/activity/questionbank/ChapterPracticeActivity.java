@@ -1,5 +1,6 @@
 package cn.md.trainclient.activity.questionbank;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import cn.md.trainclient.R;
@@ -21,5 +22,9 @@ public class ChapterPracticeActivity extends BaseActivity {
         actionBar.setTitle("章节练习");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayUseLogoEnabled(false);
+
+        Intent intent = new Intent(getApplicationContext(), ChapterSelectActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

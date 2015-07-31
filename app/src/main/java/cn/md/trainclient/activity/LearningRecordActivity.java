@@ -33,7 +33,7 @@ public class LearningRecordActivity extends BaseActivity {
         List<LearningRecord> data = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             LearningRecord entity = new LearningRecord();
-            entity.setCourseName("course_name" + i);
+            entity.setCourseName("课程名" + i);
             entity.setCourseType(i);
             entity.setLearningDate(System.currentTimeMillis());
             entity.setProgress(80);

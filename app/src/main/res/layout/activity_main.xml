@@ -28,6 +28,8 @@
                 android:id="@+id/my_course"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
                 android:layout_weight="1"
                 android:background="@drawable/tab_bg">
 
@@ -54,10 +56,11 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginLeft="1px"
                 android:id="@+id/course_center"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="1px"
                 android:layout_weight="1"
                 android:background="@drawable/tab_bg">
 
@@ -85,9 +88,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="1px"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="1px"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -95,6 +98,8 @@
                 android:id="@+id/examination"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
                 android:layout_weight="1"
                 android:background="@drawable/tab_bg">
 
@@ -121,10 +126,11 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginLeft="1px"
                 android:id="@+id/question_bank"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="1px"
                 android:layout_weight="1"
                 android:background="@drawable/tab_bg">
 
@@ -152,9 +158,9 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="1px"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="1px"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -162,6 +168,7 @@
                 android:id="@+id/message"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_marginRight="1px"
                 android:layout_weight="1"
                 android:background="@drawable/tab_bg">
 
@@ -188,10 +195,10 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_marginLeft="1px"
                 android:id="@+id/personal_center"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
+                android:layout_marginLeft="1px"
                 android:layout_weight="1"
                 android:background="@drawable/tab_bg">
 

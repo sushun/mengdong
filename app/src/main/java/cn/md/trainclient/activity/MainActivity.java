@@ -14,11 +14,10 @@ import cn.md.trainclient.activity.questionbank.QuestionBankActivity;
  * User: su
  * Date: 2015-07-10.
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onInit(Bundle savedInstanceState) {
         setContentView(R.layout.activity_main);
 
         initView();

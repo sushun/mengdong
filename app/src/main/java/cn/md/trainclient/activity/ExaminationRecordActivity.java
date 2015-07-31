@@ -39,7 +39,7 @@ public class ExaminationRecordActivity extends BaseActivity {
     }
 
     private void initView() {
-        actionBar.setTitle("考试记录");
+        actionBar.setTitle("考试成绩");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayUseLogoEnabled(false);
 

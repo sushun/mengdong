@@ -10,18 +10,18 @@ import android.widget.TextView;
 import java.util.List;
 
 import cn.md.trainclient.R;
-import cn.md.trainclient.model.ExamRecord;
-import cn.md.trainclient.model.LearningRecord;
+import cn.md.trainclient.model.CourseChapter;
+import cn.md.trainclient.model.Message;
 
 /**
  * User: su
  * Date: 2015-07-14.
  */
-public class LearningRecordAdapter extends BaseAdapter {
+public class CourseChapterAdapter extends BaseAdapter {
     private LayoutInflater layoutInflater;
-    private List<LearningRecord> data;
+    private List<CourseChapter> data;
 
-    public LearningRecordAdapter(Context context, List<LearningRecord> data) {
+    public CourseChapterAdapter(Context context, List<CourseChapter> data) {
         this.layoutInflater = LayoutInflater.from(context);
         this.data = data;
     }
@@ -41,7 +41,7 @@ public class LearningRecordAdapter extends BaseAdapter {
         return position;
     }
 
-    public List<LearningRecord> getData() {
+    public List<CourseChapter> getData() {
         return data;
     }
 
@@ -49,31 +49,25 @@ public class LearningRecordAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.view_list_item_learning_record, null);
+            convertView = layoutInflater.inflate(R.layout.view_list_item_course_chapter, null);
             holder = new ViewHolder();
 
             holder.title = (TextView) convertView.findViewById(R.id.title);
-            holder.title_2 = (TextView) convertView.findViewById(R.id.title_2);
-            holder.title_3 = (TextView) convertView.findViewById(R.id.title_3);
-            holder.title_4 = (TextView) convertView.findViewById(R.id.title_4);
+            holder.subTitle = (TextView) convertView.findViewById(R.id.subtitle);
 
             convertView.setTag(holder);
         }
 
         holder = (ViewHolder) convertView.getTag();
-        final LearningRecord entity = data.get(position);
+        final CourseChapter entity = data.get(position);
         holder.title.setText(entity.getCourseName());
-        holder.title_2.setText(String.valueOf(entity.getCourseType()));
-        holder.title_3.setText(String.valueOf(entity.getProgress()));
-        holder.title_4.setText(String.valueOf(entity.getLearningDate()));
+        holder.subTitle.setText(String.valueOf(entity.getQuestionNum()));
 
         return convertView;
     }
 
     static class ViewHolder {
         TextView title;
-        TextView title_2;
-        TextView title_3;
-        TextView title_4;
+        TextView subTitle;
     }
 }
