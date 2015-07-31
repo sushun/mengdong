@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/collect"
+        android:title="收藏"
+        android:icon="@drawable/scan"
+        android:showAsAction="always" />
+</menu>

@@ -1,5 +1,6 @@
 package cn.md.trainclient.activity.coursecenter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -8,10 +9,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 import cn.md.trainclient.R;
 import cn.md.trainclient.activity.BaseActivity;
+import cn.md.trainclient.activity.ScanActivity;
 import cn.md.trainclient.adapter.CourseDetailAdapter;
 import cn.md.trainclient.adapter.CourseDetailFragmentAdapter;
 import cn.md.trainclient.api.CourseWareQuerryRequest;
@@ -37,6 +41,7 @@ public class CourseDetailActivity extends BaseActivity {
     private TextView courseName, course_describe, course_createTime;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private MenuItem collectMenu;
 
     private Course item;
     private List<CoursewareQuerryItem> data;
@@ -138,5 +143,36 @@ public class CourseDetailActivity extends BaseActivity {
                 }, request);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_course_detail, menu);
+        collectMenu = menu.findItem(R.id.collect);
+        collectMenu.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (R.id.collect == item.getItemId()) {
+            updateCollectMenu();
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
+
+    private void updateCollectMenu() {
+        if (collectMenu == null) {
+            return ;
+        }
+        if (collectMenu.getTitle().equals("收藏")) {
+            toast("收藏成功");
+            collectMenu.setTitle("取消收藏");
+        } else {
+            toast("取消收藏");
+            collectMenu.setTitle("收藏");
+        }
     }
 }

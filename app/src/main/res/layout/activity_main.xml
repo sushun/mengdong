@@ -2,16 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@color/background"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_margin="15dp"
-        android:layout_width="200dp"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
         android:layout_gravity="center_horizontal"
-        android:layout_height="wrap_content"
-        android:src="@drawable/home_title"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/banner" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -28,7 +28,8 @@
                 android:id="@+id/my_course"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -45,18 +46,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="2dp"
                         android:text="我的课程"
-                        android:textColor="@color/white"
+                        android:textColor="@color/secondary_text"
                         android:textSize="16sp" />
                 </LinearLayout>
             </RelativeLayout>
 
             <RelativeLayout
+                android:layout_marginLeft="1px"
                 android:id="@+id/course_center"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -73,15 +76,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="2dp"
                         android:text="课程中心"
-                        android:textColor="@color/white"
+                        android:textColor="@color/secondary_text"
                         android:textSize="16sp" />
                 </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="1px"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -91,7 +95,8 @@
                 android:id="@+id/examination"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -108,18 +113,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="2dp"
                         android:text="考试"
-                        android:textColor="@color/white"
+                        android:textColor="@color/secondary_text"
                         android:textSize="16sp" />
                 </LinearLayout>
             </RelativeLayout>
 
             <RelativeLayout
+                android:layout_marginLeft="1px"
                 android:id="@+id/question_bank"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -136,15 +143,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="2dp"
                         android:text="题库"
-                        android:textColor="@color/white"
+                        android:textColor="@color/secondary_text"
                         android:textSize="16sp" />
                 </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="1px"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -154,7 +162,8 @@
                 android:id="@+id/message"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -171,18 +180,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="2dp"
                         android:text="消息咨询"
-                        android:textColor="@color/white"
+                        android:textColor="@color/secondary_text"
                         android:textSize="16sp" />
                 </LinearLayout>
             </RelativeLayout>
 
             <RelativeLayout
+                android:layout_marginLeft="1px"
                 android:id="@+id/personal_center"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
@@ -199,9 +210,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="2dp"
                         android:text="个人中心"
-                        android:textColor="@color/white"
+                        android:textColor="@color/secondary_text"
                         android:textSize="16sp" />
                 </LinearLayout>
             </RelativeLayout>

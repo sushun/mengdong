@@ -54,11 +54,6 @@ public class ExaminationActivity extends BaseActivity {
         }
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
     private void initView() {
         actionBar.setTitle("考试");
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -73,7 +68,7 @@ public class ExaminationActivity extends BaseActivity {
         adapter = new ExaminationFragmentAdapter(getSupportFragmentManager(), getDummyData());
         viewPager.setAdapter(adapter);
 
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 

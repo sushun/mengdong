@@ -1,9 +1,11 @@
 package cn.md.trainclient.activity.questionbank;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import cn.md.trainclient.R;
 import cn.md.trainclient.activity.BaseActivity;
+import cn.md.trainclient.activity.ExaminationActivity;
 
 /**
  * 顺序练习
@@ -22,5 +24,9 @@ public class SequencePracticeActivity extends BaseActivity {
         actionBar.setTitle("顺序练习");
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayUseLogoEnabled(false);
+
+        Intent intent = new Intent(getApplicationContext(), QuestionPracticeActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
